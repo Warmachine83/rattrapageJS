@@ -1,3 +1,7 @@
+body{
+    background-color: #EEEDEF;
+}
+
 .container{
     width: 100%;
     max-width: 800px;
@@ -18,5 +22,8 @@
 
 #MEBatterie{
     margin-top: 3em;
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    max-width: 400px;
 }
