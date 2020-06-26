@@ -1,55 +1,123 @@
-let essai = new Audio();
-let baguette = document.getElementById('baguette');
-let couleur = ["black"]
-essai.src = "SOUND/essai.mp3"
+let caisseClaireNew = new Audio();
+let charlestonNew = new Audio();
+let crashNew = new Audio();
+let tomMediumNew = new Audio();
+let rideNew = new Audio();
+let tomBassNew = new Audio();
+let grosseCaiseNew = new Audio();
 
-function clickBtn(){
-    essai.play()
-    baguette.style.background = "green";
+let caisseClaire = document.getElementById('caisseClaire');
+let charleston = document.getElementById('charleston');
+let crash = document.getElementById('crash');
+let tomMedium = document.getElementById('tomMedium');
+let ride = document.getElementById('ride');
+let tomBass = document.getElementById('tomBass');
+let grosseCaise = document.getElementById('grosseCaise');
+
+let instruBtn = document.getElementsByClassName('instruBtn');
+
+let couleur = ["black"]
+
+caisseClaireNew.src = "SOUND/caisseClaire.m4a";
+charlestonNew.src = "SOUND/charleston.m4a";
+crashNew.src = "SOUND/crash.m4a";
+grosseCaiseNew.src = "SOUND/grosseCaisse.m4a";
+rideNew.src = "SOUND/ride.m4a";
+tomBassNew.src = "SOUND/tomBass.m4a";
+tomMediumNew.src = "SOUND/tomMedium.m4a";
+
+function restoreColor(){
+    instruBtn.style.background = "none";
+}
+
+
+function clickBtnCaisseClaire(){
+    caisseClaireNew.play()
+    caisseClaire.style.background = "green";
 
     setTimeout(restoreColor, 2000);
 }
 
-function restoreColor(){
-    baguette.style.background = "none";
+function clickBtnCharleston(){
+    charlestonNew.play()
+    charleston.style.background = "green";
+
+    setTimeout(restoreColor, 2000);
 }
+
+function clickBtnCrash(){
+    crashNew.play()
+    crash.style.background = "green";
+
+    setTimeout(restoreColor, 2000);
+}
+
+function clickBtnTomMedium(){
+    tomMediumNew.play()
+    tomMedium.style.background = "green";
+
+    setTimeout(restoreColor, 2000);
+}
+
+function clickBtnRide(){
+    rideNew.play()
+    ride.style.background = "green";
+
+    setTimeout(restoreColor, 2000);
+}
+
+function clickBtnTomBass(){
+    tomBassNew.play()
+    tomBass.style.background = "green";
+
+    setTimeout(restoreColor, 2000);
+}
+
+function clickBtnGrosseCaisse(){
+    grosseCaiseNew.play()
+    grosseCaise.style.background = "green";
+
+    setTimeout(restoreColor, 2000);
+}
+
+
 
 document.onkeypress= function sound1(e) {
     let key = event.which || event.keyCode;
     if (key == 97) {
-        essai.play()
-        baguette.style.background = "green";
+        caisseClaireNew.play()
+        caisseClaire.style.background = "green";
         setTimeout(restoreColor, 2000);
     }
     
     if (key == 122) {
-        essai.play()
-        baguette.style.background = "green";
+        charlestonNew.play()
+        charleston.style.background = "green";
         setTimeout(restoreColor, 2000);
     }
     if (key == 101) {
-        essai.play()
-        baguette.style.background = "green";
+        crashNew.play()
+        crash.style.background = "green";
         setTimeout(restoreColor, 2000);
     }
     if (key == 114) {
-        essai.play()
-        baguette.style.background = "green";
+        tomMediumNew.play()
+        tomMedium.style.background = "green";
         setTimeout(restoreColor, 2000);
     }
     if (key == 113) {
-        essai.play()
-        baguette.style.background = "green";
+        rideNew.play()
+        ride.style.background = "green";
         setTimeout(restoreColor, 2000);
     }
     if (key == 115) {
-        essai.play()
-        baguette.style.background = "green";
+        tomBassNew.play()
+        tomBass.style.background = "green";
         setTimeout(restoreColor, 2000);
     }
     if (key == 100) {
-        essai.play()
-        baguette.style.background = "green";
+        grosseCaiseNew.play()
+        grosseCaise.style.background = "green";
         setTimeout(restoreColor, 2000);
     }
     
